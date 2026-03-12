@@ -131,7 +131,7 @@ public class SerialPortManager : MonoBehaviour
                 try
                 {
                     string incoming = serialPort.ReadLine();
-                    if (incoming.Trim() == "READY")
+                    if (incoming.Trim().Equals("READY"))
                     {
                         Debug.Log("Arduino is READY");
                         break;
