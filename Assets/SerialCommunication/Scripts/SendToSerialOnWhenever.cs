@@ -3,6 +3,12 @@ using UnityEngine;
 /// <summary>
 /// Sends a message to the serial port whenever this method is called.
 /// Cooldown, port readiness, and error checking are handled in SerialPortManagerFlexible.SendSafe().
+/// 
+/// IF YOU WANT TO SEND A MESSAGE SOMEWHERE IN YOUR SCRIPT, YOU CALL THIS METHOD:
+/// SendToSerial()
+/// 
+/// YOU CAN ADD CODE TO THIS SCIPT, BUT KEEP THE ORIGIONAL CODE THERE
+/// 
 /// </summary>
 public class SendToSerialOnWhenever : MonoBehaviour
 {

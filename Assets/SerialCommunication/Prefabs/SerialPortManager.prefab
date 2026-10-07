@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 937413b8aa95d4214b7cfe6715e4a2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SerialPortManager
-  port: /dev/tty.usbmodem12401
+  port: /dev/cu.usbmodem12401
   bautrate: 9600
   messageToSerialOnStop: B
   latestRawValue: 

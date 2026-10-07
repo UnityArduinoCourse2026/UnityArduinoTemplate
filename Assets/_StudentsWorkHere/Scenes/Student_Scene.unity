@@ -350,6 +350,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SerialPortManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1663455917868825160, guid: e918d100a743a4779b26e3146764aabb, type: 3}
+      propertyPath: port
+      value: /dev/cu.usbmodem12401
+      objectReference: {fileID: 0}
+    - target: {fileID: 6737813891208885266, guid: e918d100a743a4779b26e3146764aabb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6941791096295508832, guid: e918d100a743a4779b26e3146764aabb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -395,6 +403,51 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e918d100a743a4779b26e3146764aabb, type: 3}
+--- !u!1 &1031476922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1031476924}
+  - component: {fileID: 1031476923}
+  m_Layer: 0
+  m_Name: SendToSerialOnWhenever
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1031476923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031476922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e193f38c1bc3b4fd19505ba95ccbb2c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SendToSerialOnWhenever
+  messageToSerial: 
+--- !u!4 &1031476924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031476922}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -402,3 +455,4 @@ SceneRoots:
   - {fileID: 565053471}
   - {fileID: 132767388}
   - {fileID: 904381459}
+  - {fileID: 1031476924}
